@@ -18,7 +18,7 @@ Python code to formulate the myClub Tour event stats in PES mobile 2020.
 
 
 ### Usage
-The files required for the proper execution is already provided in the directory. If any import error occurs please consider running,
+The `RUN.bat` is configured to locate the Python interpreter from *C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python38\python.exe*. If there is a change in the path, consider changing it. Also if any import error occurs please consider running,
 ```
 pip install numpy
 pip install matplotlib
