@@ -88,3 +88,6 @@ def edit_tour_complete():
         tour_complete_copy.write("}")
     os.remove("tour_complete.py")
     os.rename(r'tour_complete_copy.py', r'tour_complete.py')
+
+def  printhello():
+    print("Hello")
