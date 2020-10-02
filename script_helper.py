@@ -6,14 +6,42 @@ from tour_2020_Q1 import tour_2020_Q1
 from tour_2020_Q2 import tour_2020_Q2
 from tour_2020_Q3 import tour_2020_Q3
 from tour_2020_Q4 import tour_2020_Q4
-from tour_complete import tour_complete
 
 # _GLOBAL VARIABLE
 now = datetime.now()
 
+
+# TO GET THE MONTH NAME FROM FILE NAME
+def month_name_abbreviation(file_name):
+    month_abbrev_dict = {
+        "Jan": "January",
+        "Feb": "February",
+        "Mar": "March",
+        "Apr": "April",
+        "May": "May",
+        "Jun": "June",
+        "Jul": "July",
+        "Aug": "August",
+        "Sep": "September",
+        "Oct": "October",
+        "Nov": "November",
+        "Dec": "December",
+        }
+    file_name = file_name
+    file_name_char_list = []
+    file_name_split = file_name.split(".")[0]
+    month_name_abbrev = ""
+    for ch in file_name_split:
+        if ch.isalpha():
+            file_name_char_list.append(ch)
+    month_name_abbrev = "".join(file_name_char_list)
+    month_name_abbrev = month_name_abbrev.title()
+    return (month_abbrev_dict[month_name_abbrev])
+
+
 # TO CHECK THE QUARTER OF THE YEAR
-def checkQuarter():
-    monthName = now.strftime('%B')
+def getQuarter(file_name):
+    monthName = month_name_abbreviation(file_name)
     Q1 = ["January", "February", "March"]
     Q2 = ["April", "May", "June"]
     Q3 = ["July", "August", "September"]
@@ -30,9 +58,10 @@ def checkQuarter():
     else:
         return "Error"
 
+
 # TO GET THE RELEVANT TOUR DICTIONARY
-def get_working_dict():
-    quarterName = checkQuarter()
+def get_working_dict(filename):
+    quarterName = getQuarter(filename)
     year = now.year
 
     if year == 2019 and quarterName == "Q4":
@@ -84,10 +113,11 @@ def edit_tour_complete():
         for key, val in tour_2020_Q4.items():
             dictline = '\t' + '"' + key + '"' + ': ' + str(val) + ',' + '\n'
             tour_complete_copy.write(dictline)
-        
+
         tour_complete_copy.write("}")
     os.remove("tour_complete.py")
     os.rename(r'tour_complete_copy.py', r'tour_complete.py')
 
-def  printhello():
+
+def printhello():
     print("Hello")
