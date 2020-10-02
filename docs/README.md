@@ -28,12 +28,19 @@ You can also download the directory it from [here](https://drive.google.com/file
 
 ### Screenshots
 **UI**  
-![PES 2020 Poster](https://i.postimg.cc/G3VyFw6n/pes-my-clubui.png)
+![PES 2020 Poster](https://i.postimg.cc/d1xRnWQX/pes-my-clubui.png)
 
 **Graph**  
-![Graph](https://i.postimg.cc/FsBtDGNS/2020-Q3.jpg)
+![Graph](https://github.com/gokulmanohar/PES-myCLUB-TOUR/blob/master/statistics/2020%20Q3.jpg?raw=true)
 
 ### Changelog
+**Update [02-10-2020]**  
+Changes:
+1. Automatic month based seperation changed to file name based system for better sorting at the end of each quaters.
+2. September 5th week updation.
+3. Better output format.
+4. Performance improvements.
+
 **Major Update [02-09-2020]**  
 Changes:
 1. Different tour dict. files for different quarters of the year. 
