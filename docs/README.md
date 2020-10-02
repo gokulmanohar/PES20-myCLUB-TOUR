@@ -24,7 +24,7 @@ pip install numpy
 pip install matplotlib
 ```
 Download the entire code base from this github directory and extract it to any desired location. **Do not remove or rename a file/folder**. Some files/folders may be empty but do not try to remove it.
-You can also download the directory it from [here](https://drive.google.com/file/d/1iIhW6aAUKF6N_R_hpbZBOYTl7qVmo702/view). [Only about 50KB in size]. But you may have to download the import modules
+You can also download the directory it from [here](https://drive.google.com/file/d/1CYLLF7yscQe7SPgmzkbccbi98TsaGOCu/view?usp=sharing). [Only about 7KB in size]. But you may have to download the import modules
 
 ### Screenshots
 **UI**  
