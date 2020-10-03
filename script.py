@@ -160,9 +160,9 @@ os.rename(r'tourdictionaryDupeFixed.py', operating_filename)
 choice_open_web_browser = input("Do you want to search about " + golden_boot_winner +"? (y/n): ").lower().strip()
 if choice_open_web_browser == 'y' or choice_open_web_browser == '':
     try:
-        time.sleep(0.5)
         url = "https://www.google.com.tr/search?q={}".format(golden_boot_winner)
         webbrowser.open_new_tab(url)
+        time.sleep(0.5)
     except:
         print("\nError in opening the webbrowser")
 
