@@ -171,7 +171,7 @@ if choice_open_web_browser == 'y' or choice_open_web_browser == '':
 script_helper.edit_tour_complete()
 
 
-# FUTURE PLANS
+# FUTURE PLANS 
 """
     1. Copy to clipboard
     2. Image resizing with OPENCV
