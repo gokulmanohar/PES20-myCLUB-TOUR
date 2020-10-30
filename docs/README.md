@@ -1,4 +1,4 @@
-## PES myCLUB TOUR
+## PES20 myCLUB TOUR
 Python code to formulate the myClub Tour event stats in PES mobile 2020.
 
 ![PES 2020 Poster](https://i.postimg.cc/508H46N4/pes-11253-1.jpg)
